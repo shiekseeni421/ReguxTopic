@@ -22,6 +22,9 @@ function LoginPage() {
     }
     if (!validPassword.test(inputPasswordValue.current.value)) {
       setPwdError(true);
+    } else {
+      setEmailErr(false);
+      setPwdError(false);
     }
 
     inputEmailValue.current.value = "";
